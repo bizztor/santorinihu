@@ -62,7 +62,7 @@
 ------------------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; overflow-x: hidden; }
 
 body {
   font-family: 'Poppins', 'Montserrat', system-ui, sans-serif;
@@ -206,7 +206,7 @@ h1, h2, h3, h4 { line-height: 1.15; font-weight: 700; }
 
 /* Hamburger (pure CSS) */
 .nav-toggle { display: none; }
-.nav-toggle-label { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+.nav-toggle-label { display: none; position: relative; z-index: 3; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
 .nav-toggle-label span {
   width: 26px; height: 3px; border-radius: 3px; background: var(--aegean);
   transition: transform 0.3s var(--ease), opacity 0.3s var(--ease);
@@ -591,6 +591,7 @@ h1, h2, h3, h4 { line-height: 1.15; font-weight: 700; }
   .nav-links {
     position: fixed;
     top: 0; right: 0;
+    z-index: 2;
     height: 100vh;
     width: min(78vw, 320px);
     flex-direction: column;
@@ -610,8 +611,19 @@ h1, h2, h3, h4 { line-height: 1.15; font-weight: 700; }
   .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) { opacity: 0; }
   .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
-  /* hero: drop fixed attachment (better mobile perf) */
+  /* hero: drop fixed attachment (better mobile perf) + stronger overlay for legibility */
   .hero { background-attachment: scroll; min-height: 88vh; }
+  .hero-overlay { background: linear-gradient(180deg, rgba(42, 32, 24, 0.62) 0%, rgba(42, 32, 24, 0.58) 100%); }
+  .hero-content { padding: 5rem 1.25rem; }
+
+  /* dim the page behind the open mobile menu */
+  .nav-toggle:checked ~ .nav-toggle-label::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background: rgba(42, 32, 24, 0.45);
+  }
 
   /* stacked sections */
   .about-grid,
