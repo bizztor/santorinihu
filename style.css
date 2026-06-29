@@ -312,19 +312,19 @@ h1, h2, h3, h4 { line-height: 1.15; font-weight: 700; }
 }
 .about-image-badge {
   position: absolute;
-  bottom: -28px;
-  right: -10px;
+  bottom: 18px;
+  left: -10px;
   background: var(--green);
   color: var(--white);
-  border-radius: var(--radius);
-  padding: 1.1rem 1.4rem;
+  border-radius: 14px;
+  padding: 0.7rem 1rem;
   text-align: center;
   box-shadow: var(--shadow-md);
   display: flex;
   flex-direction: column;
 }
-.about-image-badge .years { font-size: 1.8rem; font-weight: 800; }
-.about-image-badge .label { font-size: 0.78rem; font-weight: 500; letter-spacing: 1px; }
+.about-image-badge .years { font-size: 1.3rem; font-weight: 800; }
+.about-image-badge .label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.5px; }
 
 .about-text p { color: var(--muted); margin-bottom: 1rem; }
 .about-text .section-title { margin-bottom: 1.2rem; }
@@ -646,7 +646,7 @@ h1, h2, h3, h4 { line-height: 1.15; font-weight: 700; }
   .about-grid,
   .contact-grid { grid-template-columns: 1fr; }
   .about-image img { height: 360px; }
-  .about-image-badge { right: 1rem; }
+  .about-image-badge { left: 1rem; }
 
   .menu-grid,
   .why-grid,
