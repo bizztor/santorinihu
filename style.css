@@ -240,7 +240,7 @@ h1, h2, h3, h4 { line-height: 1.15; font-weight: 700; }
   justify-content: center;
   text-align: center;
   color: var(--white);
-  background: url('images/hero.jpg') center/cover no-repeat fixed;
+  background: url('new%20images/sh-2.png') center/cover no-repeat fixed;
 }
 .hero-overlay {
   position: absolute;
