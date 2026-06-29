@@ -809,3 +809,73 @@ h1, h2, h3, h4 { line-height: 1.15; font-weight: 700; }
   .page-banner { min-height: 38vh; }
   .explore-grid { grid-template-columns: 1fr; }
 }
+
+/* =============================================================
+   16. MENU LIST (image-free, premium restaurant-style menu)
+   Used on menu.html only — the home "Featured Dishes" cards
+   (.menu-card) are intentionally left unchanged.
+============================================================= */
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.5rem;
+  row-gap: 0.4rem;
+}
+
+/* Single dish row */
+.dish {
+  padding: 1.15rem 1.1rem;
+  border-bottom: 1px solid var(--line);
+  border-radius: 14px;
+  transition: background 0.25s ease-in-out, transform 0.25s ease-in-out,
+              box-shadow 0.25s ease-in-out;
+}
+.dish:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Name · dotted leader · price on one baseline */
+.dish-head { display: flex; align-items: baseline; gap: 0.5rem; }
+.dish-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  flex: 0 1 auto;
+}
+.dish-name small {
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.3px;
+}
+.dish-leader {
+  flex: 1 1 auto;
+  min-width: 1.5rem;
+  align-self: flex-end;
+  margin-bottom: 0.42rem;
+  border-bottom: 2px dotted var(--line);
+  transition: border-color 0.25s ease-in-out;
+}
+.dish-price {
+  flex: 0 0 auto;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--primary);
+  white-space: nowrap;
+}
+.dish-desc {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  max-width: 95%;
+}
+
+/* Hover accent on the leader + price */
+.dish:hover .dish-leader { border-color: var(--primary); }
+
+/* Responsive: single column on tablet & mobile */
+@media (max-width: 768px) {
+  .menu-list { grid-template-columns: 1fr; column-gap: 0; }
+}
