@@ -164,7 +164,7 @@ h1, h2, h3, h4 { line-height: 1.15; font-weight: 700; }
 }
 
 .brand { display: flex; align-items: center; gap: 0.6rem; font-weight: 800; }
-.brand-logo { width: 48px; height: 48px; }
+.brand-logo { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
 .brand-name { font-size: 1.25rem; color: var(--aegean); }
 
 .nav-links { display: flex; align-items: center; gap: 0.4rem; }
@@ -532,7 +532,7 @@ h1, h2, h3, h4 { line-height: 1.15; font-weight: 700; }
   gap: 2.5rem;
   padding: 4rem 1.5rem 2.5rem;
 }
-.footer-logo { width: 90px; height: 90px; background: var(--white); border-radius: 50%; padding: 4px; margin-bottom: 1rem; }
+.footer-logo { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; }
 .footer-brand p { font-size: 0.92rem; max-width: 320px; line-height: 1.7; }
 .footer-col h4 { color: var(--white); margin-bottom: 1rem; font-size: 1.05rem; }
 .footer-col ul { display: grid; gap: 0.6rem; }
