@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Santorini Hut</title>
+  <meta name="description" content="Browse the full Santorini Hut menu — gyros, souvlaki, halloumi, Greek salads and drinks. 100% halal." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== SHARED HEADER / TABBED NAV ===== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <img src="images/logo.svg" alt="Santorini Hut logo" class="brand-logo" />
+        <span class="brand-name">Santorini&nbsp;Hut</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="why-us.html">Why Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="menu.html" class="nav-cta">Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE BANNER ===== -->
+  <section class="page-banner" style="background-image:url('images/greek-salad.jpg')">
+    <div class="page-banner-overlay"></div>
+    <div class="page-banner-content">
+      <span class="eyebrow">Santorini Hut</span>
+      <h1>Our Menu</h1>
+      <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span>Menu</nav>
+    </div>
+  </section>
+
+  <section class="menu section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Our Menu</span>
+        <h2 class="section-title">Freshly Made, Greek to the Core</h2>
+        <p class="section-sub">Every item is prepared to order with authentic Greek ingredients and that signature Santorini Hut touch. All meats are 100% halal.</p>
+      </div>
+
+      <h3 class="menu-category">Starters &amp; Salads</h3>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/halloumi.jpg" alt="Grilled Halloumi" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Grilled Halloumi</h4><span class="price">£4.00</span></div>
+            <p>A traditional Cypriot cheese, grilled to golden perfection.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/olives.jpg" alt="Olives" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Olives</h4><span class="price">£2.50</span></div>
+            <p>Plump, marinated Mediterranean olives &mdash; the perfect nibble.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/fries.jpg" alt="Fries" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Fries</h4><span class="price">£3.00</span></div>
+            <p>Our best crispy, golden fries.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/chips-pita.jpg" alt="Chips with Pita Bread" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Chips with Pita Bread</h4><span class="price">£5.00</span></div>
+            <p>Best crispy fries served with warm pita bread and sauce.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/greek-salad.jpg" alt="Greek Salad" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Greek Salad</h4><span class="price">£5.00</span></div>
+            <p>Tomatoes, cucumber, onions, feta, green peppers, olives, Greek oregano &amp; olive oil.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/salad-meat.jpg" alt="Greek Salad" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Greek Salad <small>(Meat / Halloumi)</small></h4><span class="price">£7.00</span></div>
+            <p>Our classic Greek salad topped with your choice of meat or halloumi.</p>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="menu-category">Wraps</h3>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/souvlaki.jpg" alt="Chicken Souvlaki in Pitta" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Chicken Souvlaki in Pitta</h4><span class="price">£12.00</span></div>
+            <p>With tomato, fries, onion and the world-famous Greek sauce tzatziki.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/chicken-gyros.jpg" alt="Chicken Gyros in Pita" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Chicken Gyros in Pita</h4><span class="price">£10.00</span></div>
+            <p>Famous Greek gyros with tomato, fries, onion, lettuce &amp; tzatziki in Greek pita.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/lamb-gyros.jpg" alt="Lamb Gyros in Pita" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Lamb Gyros in Pita</h4><span class="price">£10.00</span></div>
+            <p>Famous Greek gyros with tomato, fries, onion, lettuce &amp; tzatziki in Greek pita.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/mixed-gyros.jpg" alt="Mixed Gyros in Pita" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Mixed Gyros in Pita <small>(Lamb / Chicken)</small></h4><span class="price">£10.00</span></div>
+            <p>Famous Greek gyros with tomato, fries, onion, lettuce &amp; tzatziki in Greek pita.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/veg-halloumi.jpg" alt="Vegetarian Halloumi in Pitta" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Vegetarian Halloumi in Pitta</h4><span class="price">£10.00</span></div>
+            <p>A vegetarian option with tomato, fries, onion, lettuce &amp; world-famous tzatziki.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/kebab.jpg" alt="Greek Chicken Kebab" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Greek Chicken Kebab</h4><span class="price">£10.00</span></div>
+            <p>Juicy Greek grilled chicken marinated in olive oil, lemon, garlic &amp; oregano.</p>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="menu-category">Drinks</h3>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/drinks.jpg" alt="Soft Drink / Water" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Soft Drink / Water</h4><span class="price">£1.50</span></div>
+            <p>Coke / Diet Coke / Pepsi / Fanta / Sprite (330ml) or 500ml water bottle.</p>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-img"><img src="images/ayran.jpg" alt="Loux / Ayran" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-head"><h4>Loux / Ayran</h4><span class="price">£2.00</span></div>
+            <p>Refreshing Loux (330ml) or traditional Ayran (250ml).</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="allergy-note">
+        ⚠️ If you have a food allergy, intolerance, or coeliac disease, please speak to our
+        staff about the ingredients in your food and drink before you order. Thank you.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SHARED FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="Santorini Hut logo" class="footer-logo" />
+        <p>Authentic Greek street food made fresh every day — a taste of the Aegean in the heart of Northampton.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <ul>
+          <li>Market Sq, Northampton NN1 2DL</li>
+          <li><a href="tel:+447404733760">07404 733760</a></li>
+          <li>Mon &ndash; Sat &middot; 11 AM &ndash; 5 PM</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social">
+          <a href="#" aria-label="Facebook" class="social-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12Z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="social-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.1.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.1-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.1-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.1 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1C2.6 9.9 2.6 10.3 2.6 12s0 2.1.1 3.3c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-3.3s0-2.1-.1-3.3c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.1-.3a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0Z"/></svg>
+          </a>
+          <a href="#" aria-label="Tumblr" class="social-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M14.6 21c-2.9 0-5-1.5-5-5.1V11H7.4V8.3c2.4-.6 3.4-2.7 3.6-4.8h2.6V8h3v3h-3v4.3c0 1.3.6 1.7 1.6 1.7H17V21h-2.4Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Santorini Hut &middot; Authentic Greek Food. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
